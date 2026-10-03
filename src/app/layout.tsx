@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export const metadata: Metadata = {
   title: "Panda Café | Good Coffee. Good Mood.",
@@ -23,6 +24,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans bg-[#f8eee4] text-[#1c1c1c] antialiased min-h-screen selection:bg-[#c4824a] selection:text-white">
         {children}
+        <FloatingWhatsApp />
       </body>
     </html>
   );

@@ -7,6 +7,7 @@ import FeaturesBar from "@/components/FeaturesBar";
 import MenuSection from "@/components/MenuSection";
 import AboutSection from "@/components/AboutSection";
 import GallerySection from "@/components/GallerySection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 import VideoModal from "@/components/VideoModal";
@@ -34,6 +35,9 @@ export default function Home() {
 
         {/* Gallery Section with Swiper */}
         <GallerySection />
+
+        {/* Customer Testimonials & Reviews */}
+        <TestimonialsSection />
 
         {/* Call to Action Banner */}
         <CtaSection />

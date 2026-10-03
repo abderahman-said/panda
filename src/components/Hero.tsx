@@ -68,16 +68,16 @@ export default function Hero({ onWatchVideo }: HeroProps) {
             </div>
           </div>
 
-          {/* Right Column: Transparent Hero Panda Mascot */}
+          {/* Right Column: Hero Panda Mascot */}
           <div className="lg:col-span-6 relative flex justify-center items-center">
-            <div className="relative w-full h-full min-h-[351px] group flex items-center justify-center">
+            <div className="relative w-full aspect-square max-w-[340px] sm:max-w-[440px] lg:max-w-[500px] group flex items-center justify-center">
               <Image
                 src="/images/hero-panda.jpg"
                 alt="Cute panda mascot enjoying coffee at Panda Café"
                 fill
                 priority
-                className="object-contain  transform transition-transform duration-700 hover:scale-105"
-                sizes="(max-width: 640px) 280px, (max-width: 1024px) 400px, 500px"
+                className="object-contain transform transition-transform duration-700 hover:scale-105"
+                sizes="(max-width: 640px) 340px, (max-width: 1024px) 440px, 500px"
               />
             </div>
           </div>

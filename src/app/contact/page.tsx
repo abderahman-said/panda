@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FaqSection from "@/components/FaqSection";
 import {
   MapPin,
   Phone,
@@ -325,6 +326,11 @@ export default function ContactPage() {
 
             </div>
 
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mb-12">
+            <FaqSection />
           </div>
 
           {/* Bottom Call-To-Action */}

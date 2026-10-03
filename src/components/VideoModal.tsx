@@ -34,6 +34,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
             src="/images/cafe-interior.jpg"
             alt="Panda Cafe Video Experience"
             fill
+            sizes="(max-width: 768px) 100vw, 768px"
             className="object-cover opacity-70"
           />
 
