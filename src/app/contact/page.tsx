@@ -9,23 +9,22 @@ import {
   MapPin,
   Phone,
   Clock,
-  Mail,
   ArrowLeft,
   ExternalLink,
   Sparkles,
   Wifi,
   Car,
-  Heart,
   Coffee,
   Navigation,
   MessageCircle,
 } from "lucide-react";
 
 export default function ContactPage() {
-  const whatsappNumber = "+201026994802";
-  const whatsappDisplay = "01026994802";
-  const additionalPhones = ["01016776079", "01001613805"];
+  const whatsappNumber = "+201001613805";
+  const whatsappDisplay = "01001613805";
+  const additionalPhones = ["01063900295", "0101326 3427"];
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=مرحباً%20كافيه%20باندا!%20أود%20الاستفسار%20عن...`;
+  const googleMapsUrl = "https://maps.app.goo.gl/dpWqaw7QnABjEMyT6?g_st=iw";
 
   return (
     <div className="min-h-screen bg-[#f8eee4] text-[#1c1c1c] selection:bg-[#c4824a] selection:text-white">
@@ -62,14 +61,14 @@ export default function ContactPage() {
 
             <p className="text-sm sm:text-base text-[#615c56] leading-relaxed">
               اعثر على موقعنا على الخريطة، تحدث معنا عبر واتسآب، اطلع على ساعات
-              العمل، أو تفضّل بزيارتنا لقهوة حرفية في أجواء دافئة.
+              العمل، أو تفضّل بزيارتنا لقهوة حرفية وحلويات مميزة في أجواء دافئة.
             </p>
           </div>
 
-          {/* Quick Contact & Details Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 sm:mb-16">
+          {/* Quick Contact & Details Cards Grid (3 Cards - Email Removed) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             {/* 1. WhatsApp Card (Direct Click-to-Chat) */}
-            <div className="bg-[#fffcf8] border border-[#ebdcd0] rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+            <div className="bg-[#fffcf8] border border-[#ebdcd0] rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   {/* WhatsApp SVG Icon */}
@@ -78,12 +77,12 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h3 className="text-base font-bold text-stone-900 mb-1">
-                  دردشة واتسآب
+                  دردشة واتسآب المباشرة
                 </h3>
-                <p className="text-xs text-stone-500 mb-3">
-                  ردود فورية خلال ساعات العمل.
+                <p className="text-xs text-stone-500 mb-2">
+                  للتواصل السريع والطلبات والاستفسار:
                 </p>
-                <p className="text-sm font-extrabold text-stone-900 font-mono mb-4">
+                <p className="text-base font-extrabold text-stone-900 font-mono mb-4">
                   {whatsappDisplay}
                 </p>
               </div>
@@ -91,7 +90,7 @@ export default function ContactPage() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-bold px-4 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-bold px-4 py-3 rounded-full transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
               >
                 <span>دردشة عبر واتسآب</span>
                 <ExternalLink className="w-3.5 h-3.5" />
@@ -99,34 +98,36 @@ export default function ContactPage() {
             </div>
 
             {/* 2. Direct Phone Call Card */}
-            <div className="bg-[#fffcf8] border border-[#ebdcd0] rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+            <div className="bg-[#fffcf8] border border-[#ebdcd0] rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-amber-500/10 text-[#c4824a] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Phone className="w-6 h-6" />
                 </div>
                 <h3 className="text-base font-bold text-stone-900 mb-1">
-                  اتصل بنا
+                  الاتصال وخدمة الدليفري
                 </h3>
                 <p className="text-xs text-stone-500 mb-2">
-                  للتواصل وخدمة الدليفري والاستفسار:
+                  أرقام كافيه باندا المتاحة طوال ساعات العمل:
                 </p>
                 <div className="space-y-1 mb-4 text-xs font-mono font-bold text-stone-800">
-                  <p className="text-sm text-stone-950 font-extrabold">{whatsappDisplay}</p>
-                  <p className="text-stone-600">01016776079</p>
-                  <p className="text-stone-600">01001613805</p>
+                  <p className="text-sm text-stone-950 font-extrabold">
+                    {whatsappDisplay}
+                  </p>
+                  <p className="text-stone-700">01063900295</p>
+                  <p className="text-stone-700">0101326 3427</p>
                 </div>
               </div>
               <a
                 href={`tel:${whatsappNumber}`}
-                className="inline-flex items-center justify-center gap-2 bg-[#141715] hover:bg-neutral-800 text-white text-xs font-bold px-4 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 bg-[#141715] hover:bg-neutral-800 text-white text-xs font-bold px-4 py-3 rounded-full transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
               >
                 <Phone className="w-3.5 h-3.5 text-amber-400" />
                 <span>اتصل بنا الآن</span>
               </a>
             </div>
 
-            {/* 3. Working Hours Card (مواعيد العمل) */}
-            <div className="bg-[#fffcf8] border border-[#ebdcd0] rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            {/* 3. Working Hours Card (مواعيد العمل الدقيقة) */}
+            <div className="bg-[#fffcf8] border border-[#ebdcd0] rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="w-12 h-12 rounded-2xl bg-amber-500/10 text-[#c4824a] flex items-center justify-center">
@@ -142,59 +143,28 @@ export default function ContactPage() {
                   ساعات العمل
                 </h3>
 
-                <div className="space-y-2 text-xs text-stone-600">
-                  <div className="flex justify-between pb-1.5 border-b border-[#ebdcd0]/60">
+                <div className="space-y-2.5 text-xs text-stone-600">
+                  <div className="flex justify-between pb-2 border-b border-[#ebdcd0]/60">
                     <span className="font-semibold text-stone-800">
-                      الأحد – الأربعاء
+                      كل يوم (طوال الأسبوع)
                     </span>
-                    <span className="font-mono text-stone-700">
-                      08:00 ص – 12:00 م
-                    </span>
-                  </div>
-                  <div className="flex justify-between pb-1.5 border-b border-[#ebdcd0]/60">
-                    <span className="font-semibold text-stone-800">
-                      الخميس – الجمعة
-                    </span>
-                    <span className="font-mono text-stone-700">
-                      08:00 ص – 01:30 ف
+                    <span className="font-mono text-stone-700 font-bold">
+                      09:00 ص – 01:00 ص
                     </span>
                   </div>
                   <div className="flex justify-between pt-0.5">
-                    <span className="font-semibold text-stone-800">السبت</span>
-                    <span className="font-mono text-stone-700">
-                      08:00 ص – 12:00 م
+                    <span className="font-semibold text-stone-800">
+                      يوم الجمعة
+                    </span>
+                    <span className="font-mono text-stone-700 font-bold">
+                      من بعد الصلاة – 01:00 ص
                     </span>
                   </div>
                 </div>
               </div>
-              <p className="text-[11px] text-stone-400 mt-3 italic">
-                *المخبز الطازج متوفر ابتداءً من 8:00 صباحًا
+              <p className="text-[11px] text-stone-500 mt-4 bg-[#f8eee4] p-2.5 rounded-xl border border-[#ebdcd0]">
+                ☕ نسعد باستقبالكم وتقديم أفضل أنواع القهوة والمخبوزات الطازجة.
               </p>
-            </div>
-
-            {/* 4. Email / General Info Card */}
-            <div className="bg-[#fffcf8] border border-[#ebdcd0] rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-              <div>
-                <div className="w-12 h-12 rounded-2xl bg-stone-900/10 text-stone-800 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Mail className="w-6 h-6" />
-                </div>
-                <h3 className="text-base font-bold text-stone-900 mb-1">
-                  استفسارات بالبريد
-                </h3>
-                <p className="text-xs text-stone-500 mb-3">
-                  للشركات والشراكات والاستفسارات العامة.
-                </p>
-                <p className="text-sm font-semibold text-stone-900 font-mono mb-4 break-all">
-                  hello@pandacafe.com
-                </p>
-              </div>
-              <a
-                href="mailto:hello@pandacafe.com"
-                className="inline-flex items-center justify-center gap-2 bg-[#fffcf8] hover:bg-[#f2e5d7] text-stone-800 border border-[#ebdcd0] text-xs font-bold px-4 py-2.5 rounded-full transition-all duration-200 cursor-pointer"
-              >
-                <Mail className="w-3.5 h-3.5 text-[#c4824a]" />
-                <span>إرسال بريد إلكتروني</span>
-              </a>
             </div>
           </div>
 
@@ -214,13 +184,13 @@ export default function ContactPage() {
                   </div>
 
                   <a
-                    href="https://maps.google.com/?q=Panda+Cafe"
+                    href={googleMapsUrl}
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-stone-900 bg-[#ebdcd0]/70 hover:bg-[#ebdcd0] px-4 py-2.5 rounded-full transition-colors self-start sm:self-auto cursor-pointer shadow-xs"
                   >
                     <Navigation className="w-3.5 h-3.5 text-[#c4824a]" />
-                    <span>الحصول على الاتجاهات</span>
+                    <span>فتح في خرائط Google</span>
                     <ExternalLink className="w-3 h-3 text-stone-500" />
                   </a>
                 </div>
@@ -229,7 +199,7 @@ export default function ContactPage() {
                 <div className="relative w-full aspect-[16/11] sm:aspect-[16/10] rounded-2xl overflow-hidden border border-[#ebdcd0] shadow-inner bg-stone-200">
                   <iframe
                     title="Panda Cafe Location Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.61185040523!2d31.25846435!3d30.0594699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1710000000000!5m2!1sen!2seg"
+                    src="https://maps.google.com/maps?q=30.957519,31.242784&hl=ar&z=17&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -249,15 +219,15 @@ export default function ContactPage() {
                         كافيه باندا
                       </h4>
                       <p className="text-[11px] text-stone-500">
-                        ميت عساس - طريق المحطة
+                        ميت عساس - طريق المحطة (بجوار مسجد التقوى)
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <p className="text-xs text-stone-500 flex items-center gap-1.5 pt-1">
+                <p className="text-xs text-stone-600 flex items-center gap-1.5 pt-1">
                   <MapPin className="w-3.5 h-3.5 text-[#c4824a]" />
-                  <span>ميت عساس - طريق المحطة</span>
+                  <span>ميت عساس، سمنود، محافظة الغربية - طريق المحطة (بجوار مسجد التقوى)</span>
                 </p>
               </div>
 

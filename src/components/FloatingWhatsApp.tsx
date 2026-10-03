@@ -6,7 +6,7 @@ import { X } from "lucide-react";
 export default function FloatingWhatsApp() {
   const [showTooltip, setShowTooltip] = useState(true);
 
-  const whatsappNumber = "+201026994802";
+  const whatsappNumber = "+201001613805";
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=مرحباً%20كافيه%20باندا!%20أود%20الاستفسار%20عن...`;
 
   return (
