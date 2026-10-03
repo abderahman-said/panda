@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-handwriting: 'Caveat', cursive;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8eee4;
+    color: #1a1a1a;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1e3d5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4beaa;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b87a4b;
+}
+
+/* Swiper Custom Pagination Dots for Menu Section (OUR HANDCRAFTED SELECTION) */
+.menu-swiper {
+  padding-bottom: 58px !important;
+  position: relative;
+}
+
+.menu-swiper .swiper-pagination {
+  bottom: 8px !important;
+  display: inline-flex !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 6px 14px !important;
+  background: rgba(255, 252, 248, 0.9) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid #ebdcd0 !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 4px 14px rgba(109, 76, 43, 0.08) !important;
+  z-index: 10;
+}
+
+.menu-swiper .swiper-pagination-bullet {
+  width: 9px !important;
+  height: 9px !important;
+  background-color: #d8c5b3 !important;
+  opacity: 1 !important;
+  border-radius: 9999px !important;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+  display: inline-block !important;
+}
+
+.menu-swiper .swiper-pagination-bullet:hover {
+  background-color: #c4824a !important;
+  transform: scale(1.25) !important;
+}
+
+.menu-swiper .swiper-pagination-bullet-active {
+  width: 28px !important;
+  height: 9px !important;
+  background: linear-gradient(135deg, #c4824a 0%, #b0672e 100%) !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 2px 8px rgba(196, 130, 74, 0.45) !important;
+}
