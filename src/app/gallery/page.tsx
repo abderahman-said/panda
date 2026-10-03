@@ -30,120 +30,129 @@ interface GalleryPhoto {
 const allGalleryPhotos: GalleryPhoto[] = [
   {
     id: "1",
-    title: "Artisan Panda Latte Art",
+    title: "فن رسم الباندا على اللاتيه",
     category: "coffee",
-    badge: "Signature Art",
+    badge: "رسم مميز",
     image: "/images/panda-latte-art.jpg",
-    alt: "Artisan latte art featuring our cute signature panda foam face",
-    description: "Every cup is a canvas for our baristas to bring a warm smile to your day.",
+    alt: "رسم فني بالرغوة على وجه اللاتيه لوجه باندا لطيف",
+    description:
+      "كل فنجان لوحة فنية يرسمها الباريستا ليرسم ابتسامة دافئة على يومك.",
   },
   {
     id: "2",
-    title: "Warm Brick & Glowing Ambience",
+    title: "جدران دافئة وأجواء ساحرة",
     category: "ambience",
-    badge: "Cozy Vibe",
+    badge: "أجواء دافئة",
     image: "/images/cafe-interior.jpg",
-    alt: "Warm brick interior of Panda Café with glowing neon signage",
-    description: "Relax in our ambient lighting, comfortable seating, and cozy neighborhood feel.",
+    alt: "ديكور داخلي دافئ بالطوب لكافيه باندا مع إضاءات نيون جذابة",
+    description:
+      "استرخِ في إضاءاتنا المريحة، ومقاعدنا الهادئة، وأجوائنا الودودة.",
   },
   {
     id: "3",
-    title: "18-Hour Nitro Cold Brew",
+    title: "قهوة كولد برو نيترو مخمرة 18 ساعة",
     category: "coffee",
-    badge: "Single Origin",
+    badge: "محصول مختص",
     image: "/images/cold-brew.jpg",
-    alt: "Nitro cold brew coffee in a crystal glass with ice cubes",
-    description: "Slowly steeped for maximum smoothness with natural chocolate and caramel notes.",
+    alt: "قهوة نيترو كولد برو في كأس زجاجي فاخر مع مكعبات الثلج",
+    description:
+      "مستخلصة على مهل لأعلى درجات النعومة مع إيحاءات الشوكولاتة والكراميل الطبيعية.",
   },
   {
     id: "4",
-    title: "Morning Duet: Coffee & Croissant",
+    title: "ثنائي الصباح: قهوة وكرواسون",
     category: "bakery",
-    badge: "Daily Special",
+    badge: "عرض يومي",
     image: "/images/coffee-pastry.jpg",
-    alt: "Steaming hot latte and golden French butter croissant on wooden table",
-    description: "The classic morning ritual served fresh every single day starting at 8:00 AM.",
+    alt: "لاتيه ساخن وكرواسون فرنسي ذهبي بالزبدة على طاولة خشبية",
+    description:
+      "الطقس الصباحي الكلاسيكي يُقدّم طازجاً يومياً من الساعة 8:00 صباحاً.",
   },
   {
     id: "5",
-    title: "Our Fluffy Mascot Friend",
+    title: "صديقنا الباندا اللطيف",
     category: "mascot",
-    badge: "Panda Friend",
+    badge: "صديق باندا",
     image: "/images/baby-panda.jpg",
-    alt: "Cute fluffy panda bear enjoying a gentle moment",
-    description: "The lovable mascot representing the peaceful, joyful soul of Panda Café.",
+    alt: "دب باندا صغير وجميل يستمتع بلحظة هادئة",
+    description:
+      "الشخصية المحبوبة التي تعبّر عن روح الهدوء والمرح في كافيه باندا.",
   },
   {
     id: "6",
-    title: "Velvety Microfoam Cappuccino",
+    title: "كابوتشينو برغوة مخملية ناعمة",
     category: "coffee",
-    badge: "Barista Favorite",
+    badge: "مفضلة الباريستا",
     image: "/images/cappuccino.jpg",
-    alt: "Rich cappuccino with elegant tulip latte art pattern",
-    description: "A harmonious balance of bold double espresso and velvety microfoam.",
+    alt: "كابوتشينو غني برسمة زهرة التوليب الأنيقة",
+    description:
+      "توازن متناغم ومثالي بين دبل إسبريسو غني ورغوة الحليب المخملية.",
   },
   {
     id: "7",
-    title: "Belgian Chocolate Iced Mocha",
+    title: "آيس موكا بالشوكولاتة البلجيكية",
     category: "coffee",
-    badge: "Rich & Sweet",
+    badge: "غنية ولذيذة",
     image: "/images/mocha.jpg",
-    alt: "Iced mocha layered with espresso, milk, and dark chocolate sauce",
-    description: "Decadent dark cocoa melted into freshly pulled espresso shots.",
+    alt: "آيس موكا بطبقات الإسبريسو والحليب وصوص الشوكولاتة الداكنة",
+    description: "كاكاو فاخر يذوب مع جرعات الإسبريسو الطازجة لمتعة لا تقاوم.",
   },
   {
     id: "8",
-    title: "Golden French Butter Croissant",
+    title: "كرواسون فرنسي بالزبدة الذهبية",
     category: "bakery",
-    badge: "Fresh Baked",
+    badge: "خبز طازج",
     image: "/images/croissant.jpg",
-    alt: "Flaky golden French butter croissant on ceramic plate",
-    description: "Baked daily in-house using pure European butter for crisp, airy layers.",
+    alt: "كرواسون فرنسي مقرمش وهش بالزبدة على طبق أنيق",
+    description:
+      "يُخبز يومياً في الكافيه باستخدام زبدة أوروبية نقية لطبقات هشة ومقرمشة.",
   },
   {
     id: "9",
-    title: "Refreshing Classic Iced Latte",
+    title: "آيس لاتيه كلاسيكي منعش",
     category: "coffee",
-    badge: "Best Seller",
+    badge: "الأكثر طلباً",
     image: "/images/iced-latte.jpg",
-    alt: "Iced latte with layered espresso and chilled fresh milk",
-    description: "Chilled to perfection over clear ice for a smooth, refreshing afternoon lift.",
+    alt: "آيس لاتيه بطبقات الإسبريسو والحليب البارد والثلج",
+    description:
+      "مبرد بانتعاش فوق مكعبات الثلج لجرعة طاقة وانتعاش نهارية مثالية.",
   },
   {
     id: "10",
-    title: "Artisan Craft Behind The Bar",
+    title: "حرفية تحضير القهوة وراء البار",
     category: "ambience",
-    badge: "Barista Craft",
+    badge: "فن الباريستا",
     image: "/images/cta-banner.jpg",
-    alt: "Barista preparing handcrafted espresso drinks behind the bar",
-    description: "Our passionate coffee artisans pouring precision and care into every order.",
+    alt: "باريستا محترف يحضر مشروبات القهوة بدقة وعناية",
+    description:
+      "خبراء القهوة لدينا يصبّون شغفهم ودقتهم في كل كوب يُقدّم إليك.",
   },
   {
     id: "11",
-    title: "The Peeking Mascot Vibe",
+    title: "باندا يطل بفضول ومرح",
     category: "mascot",
-    badge: "Playful Mascot",
+    badge: "شخصية مرحة",
     image: "/images/about-panda-peeking.jpg",
-    alt: "Adorable 3D panda mascot peeking curiously",
-    description: "Playful, friendly, and always ready to make your café visit delightful.",
+    alt: "باندا ثلاثي الأبعاد لطيف يطل بفضول وابتسامة",
+    description: "مرح وودود، وجاهز دائماً لجعل زيارتك للكافيه أكثر بهجة.",
   },
   {
     id: "12",
-    title: "Signature Panda Coffee Ritual",
+    title: "طقوس قهوة باندا المميزة",
     category: "mascot",
-    badge: "Iconic",
+    badge: "أيقوني",
     image: "/images/hero-panda.jpg",
-    alt: "Panda mascot holding a steaming cup of coffee",
-    description: "Good coffee. Good mood. The founding philosophy of our café family.",
+    alt: "مجسم باندا يحمل كوب قهوة ساخن بحب",
+    description: "قهوة مميزة.. مزاج رائع. الفلسفة الأساسية لعائلة كافيه باندا.",
   },
 ];
 
 const categories = [
-  { id: "all", label: "All Photos" },
-  { id: "coffee", label: "Artisan Coffee" },
-  { id: "ambience", label: "Café Ambience" },
-  { id: "bakery", label: "Fresh Bakery" },
-  { id: "mascot", label: "Panda Moments" },
+  { id: "all", label: "جميع الصور" },
+  { id: "coffee", label: "قهوة مختصة" },
+  { id: "ambience", label: "أجواء الكافيه" },
+  { id: "bakery", label: "مخبوزات طازجة" },
+  { id: "mascot", label: "لحظات باندا" },
 ] as const;
 
 export default function GalleryPage() {
@@ -155,19 +164,24 @@ export default function GalleryPage() {
     return allGalleryPhotos.filter((p) => p.category === selectedCategory);
   }, [selectedCategory]);
 
-  const currentPhoto = lightboxIndex !== null ? filteredPhotos[lightboxIndex] : null;
+  const currentPhoto =
+    lightboxIndex !== null ? filteredPhotos[lightboxIndex] : null;
 
   const handlePrev = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (lightboxIndex !== null) {
-      setLightboxIndex((prev) => (prev! > 0 ? prev! - 1 : filteredPhotos.length - 1));
+      setLightboxIndex((prev) =>
+        prev! > 0 ? prev! - 1 : filteredPhotos.length - 1,
+      );
     }
   };
 
   const handleNext = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (lightboxIndex !== null) {
-      setLightboxIndex((prev) => (prev! < filteredPhotos.length - 1 ? prev! + 1 : 0));
+      setLightboxIndex((prev) =>
+        prev! < filteredPhotos.length - 1 ? prev! + 1 : 0,
+      );
     }
   };
 
@@ -178,7 +192,6 @@ export default function GalleryPage() {
 
       <main className="pt-28 sm:pt-36 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-xs text-stone-500 mb-6">
             <Link
@@ -206,7 +219,8 @@ export default function GalleryPage() {
             </h1>
 
             <p className="text-sm sm:text-base text-[#615c56] leading-relaxed">
-              Take a visual stroll through our warm brick interior, handcrafted latte art, fresh bakery treats, and joyful panda corners.
+              Take a visual stroll through our warm brick interior, handcrafted
+              latte art, fresh bakery treats, and joyful panda corners.
             </p>
           </div>
 
@@ -217,7 +231,8 @@ export default function GalleryPage() {
               const count =
                 cat.id === "all"
                   ? allGalleryPhotos.length
-                  : allGalleryPhotos.filter((p) => p.category === cat.id).length;
+                  : allGalleryPhotos.filter((p) => p.category === cat.id)
+                      .length;
 
               return (
                 <button
@@ -232,7 +247,9 @@ export default function GalleryPage() {
                   <span>{cat.label}</span>
                   <span
                     className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
-                      isActive ? "bg-stone-700 text-stone-200" : "bg-stone-200 text-stone-600"
+                      isActive
+                        ? "bg-stone-700 text-stone-200"
+                        : "bg-stone-200 text-stone-600"
                     }`}
                   >
                     {count}
@@ -259,7 +276,7 @@ export default function GalleryPage() {
                     className="object-cover object-center group-hover:scale-108 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                   />
-                  
+
                   {/* Subtle Badge */}
                   <div className="absolute top-2.5 left-2.5 bg-[#141715]/80 backdrop-blur-xs text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
                     {photo.badge}
@@ -288,9 +305,12 @@ export default function GalleryPage() {
 
           {/* Instagram Community Banner */}
           <div className="mt-16 sm:mt-20 bg-[#fffcf8] border border-[#ebdcd0] rounded-3xl p-6 sm:p-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="space-y-2 text-center md:text-left max-w-xl">
+            <div className="space-y-2 text-center md:text-right max-w-xl">
               <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#c4824a] uppercase tracking-wider">
-                <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+                <svg
+                  className="w-4 h-4 fill-none stroke-current stroke-2"
+                  viewBox="0 0 24 24"
+                >
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
@@ -301,7 +321,12 @@ export default function GalleryPage() {
                 Tag @panda_coffee33 to Get Featured
               </h3>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Take a photo of your favorite latte art, pastry, or cozy corner at Panda Café and tag us on Instagram with <span className="font-semibold text-stone-900">#PandaCafeMoments</span>.
+                Take a photo of your favorite latte art, pastry, or cozy corner
+                at Panda Café and tag us on Instagram with{" "}
+                <span className="font-semibold text-stone-900">
+                  #PandaCafeMoments
+                </span>
+                .
               </p>
             </div>
 
@@ -311,7 +336,10 @@ export default function GalleryPage() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 bg-[#141715] hover:bg-neutral-800 text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer shrink-0"
             >
-              <svg className="w-4 h-4 fill-none stroke-amber-400 stroke-2" viewBox="0 0 24 24">
+              <svg
+                className="w-4 h-4 fill-none stroke-amber-400 stroke-2"
+                viewBox="0 0 24 24"
+              >
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
@@ -329,7 +357,8 @@ export default function GalleryPage() {
               Ready to Sip Coffee in Our Cozy Corner?
             </h2>
             <p className="text-stone-300 text-xs sm:text-sm max-w-md mx-auto">
-              Photos capture a fraction of the warmth. Join us in person and enjoy fresh artisan coffee brewed right in front of you.
+              Photos capture a fraction of the warmth. Join us in person and
+              enjoy fresh artisan coffee brewed right in front of you.
             </p>
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link
@@ -346,7 +375,6 @@ export default function GalleryPage() {
               </Link>
             </div>
           </div>
-
         </div>
       </main>
 
@@ -408,7 +436,9 @@ export default function GalleryPage() {
                   </span>
                   <h4 className="text-base font-bold">{currentPhoto.title}</h4>
                 </div>
-                <p className="text-xs text-stone-400">{currentPhoto.description}</p>
+                <p className="text-xs text-stone-400">
+                  {currentPhoto.description}
+                </p>
               </div>
 
               <div className="text-xs font-mono text-stone-400 shrink-0 self-end sm:self-auto">

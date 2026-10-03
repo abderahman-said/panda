@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowLeft, Play } from "lucide-react";
 
 interface HeroProps {
   onWatchVideo?: () => void;
@@ -22,28 +22,27 @@ export default function Hero({ onWatchVideo }: HeroProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Text & CTA */}
-          <div className="lg:col-span-6 flex flex-col justify-center text-left space-y-4 sm:space-y-6">
+          <div className="lg:col-span-6 flex flex-col justify-center  space-y-4 sm:space-y-6">
             {/* Eyebrow badge */}
             <div className="inline-flex items-center gap-2">
               <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-[#716a62] uppercase">
-                WELCOME TO PANDA CAFÉ
+                أهلاً بكم في كافيه باندا
               </span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-[3.75rem] font-extrabold text-[#191919] leading-[1.1] sm:leading-[1.08] tracking-tight">
-              Good Coffee. <br />
-              Good{" "}
+              قهوة رائعة. <br />
+              مزاج{" "}
               <span className="text-[#c4824a] relative inline-block">
-                Mood.
+                رائع.
               </span>
             </h1>
 
             {/* Description Paragraph */}
             <p className="text-sm sm:text-base lg:text-lg text-[#615c56] leading-relaxed max-w-lg">
-              At Panda Café, we believe a great cup of coffee can make your day
-              brighter. Fresh coffee, delicious food, and a cozy atmosphere —
-              all in one place.
+              في كافيه باندا، نؤمن بأن فنجان قهوة رائع يجعل يومك أكثر إشراقًا.
+              قهوة طازجة وطعام لذيذ وأجواء دافئة — كل ذلك في مكان واحد.
             </p>
 
             {/* Action Buttons */}
@@ -52,8 +51,8 @@ export default function Hero({ onWatchVideo }: HeroProps) {
                 href="/menu"
                 className="group inline-flex items-center justify-center gap-2 bg-[#141715] hover:bg-neutral-800 text-white text-xs sm:text-sm font-semibold px-5 sm:px-6 py-3 sm:py-3.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 text-center"
               >
-                <span>Explore Menu</span>
-                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+                <span>استكشف المنيو</span>
+                <ArrowLeft className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
               </Link>
 
               <button
@@ -63,7 +62,7 @@ export default function Hero({ onWatchVideo }: HeroProps) {
                 <span className="w-5 sm:w-6 h-5 sm:h-6 rounded-full border border-[#212121] flex items-center justify-center transition-transform group-hover:scale-110">
                   <Play className="w-2 sm:w-2.5 h-2 sm:h-2.5 fill-current ml-0.5" />
                 </span>
-                <span>Watch Video</span>
+                <span>شاهد الفيديو</span>
               </button>
             </div>
           </div>
@@ -73,7 +72,7 @@ export default function Hero({ onWatchVideo }: HeroProps) {
             <div className="relative w-full aspect-square max-w-[340px] sm:max-w-[440px] lg:max-w-[500px] group flex items-center justify-center">
               <Image
                 src="/images/hero-panda.jpg"
-                alt="Cute panda mascot enjoying coffee at Panda Café"
+                alt="ماسكوت الباندا يستمتع بالقهوة في كافيه باندا"
                 fill
                 priority
                 className="object-contain transform transition-transform duration-700 hover:scale-105"

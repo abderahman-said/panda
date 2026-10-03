@@ -16,30 +16,30 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Sarah Mansour",
-    role: "Regular Visitor",
+    name: "سارة منصور",
+    role: "زائرة دائمة",
     rating: 5,
-    date: "Last week",
-    highlight: "The Panda Latte Art made my entire morning!",
-    text: "I come here three times a week for remote work. The atmosphere is peaceful, the high-speed Wi-Fi never drops, and the baristas actually remember my order. Plus, that latte art puts a smile on anyone's face.",
+    date: "الأسبوع الماضي",
+    highlight: "فن اللاتيه على شكل باندا جمّل صباحي كاملاً!",
+    text: "أتي إلى هنا ثلاث مرات في الأسبوع للعمل عن بعد. الأجواء هادئة، الواي فاي 5ج سريع لا ينقطع، والباريستا يتذكرون طلبي. وفن اللاتيه هذا يضع بسمة على أي شخص.",
   },
   {
     id: "2",
-    name: "Karim El-Sayed",
-    role: "Coffee Connoisseur",
+    name: "كريم السيد",
+    role: "محب قهوة",
     rating: 5,
-    date: "2 weeks ago",
-    highlight: "Genuine specialty coffee beans, properly brewed.",
-    text: "As someone who takes espresso seriously, Panda Café delivers single-origin beans roasted to perfection. The 18-hour cold brew has natural caramel notes without any bitterness. Easily my favorite spot in town.",
+    date: "قبل أسبوعين",
+    highlight: "حبوب مختارة حقيقية، محضورة بإتقان.",
+    text: "كمستخدم جدي للإسبريسو، كافيه باندا يقدم حبوبًا أحادية المصدر محمصة بإتقان. الكولد بريو لمدة 18 ساعة فيه نكهات كرميل طبيعية دون مرارة. بكل سهولة مكاني المفضل في المدينة.",
   },
   {
     id: "3",
-    name: "Nouran Hatem",
-    role: "Architecture Student",
+    name: "نوران حاتم",
+    role: "طالبة هندسة معمارية",
     rating: 5,
-    date: "1 month ago",
-    highlight: "Cozy lighting and the freshest croissants in the city.",
-    text: "The interior aesthetics are stunning — warm brick walls, botanical plants, and gentle jazz playing in the background. Fresh butter croissants straight out of the oven at 8 AM paired with a flat white is unbeatable.",
+    date: "منذ شهر",
+    highlight: "إضاءة دافئة وأطيب كرواسون في المدينة.",
+    text: "التصميم الداخلي رائع — جدران طوبية دافئة، نباتات خضراء، وموسيقى جاز هادئة. كرواسون بالزبدة من الفرن مباشرةً في الساعة 8 صباحًا مع فلات وايت — لا يُضاهى.",
   },
 ];
 
@@ -53,16 +53,16 @@ export default function TestimonialsSection() {
           <div className="inline-flex items-center gap-2 bg-[#ebdcd0]/70 px-3.5 py-1 rounded-full">
             <Sparkles className="w-3.5 h-3.5 text-[#c4824a]" />
             <span className="text-[11px] font-bold tracking-[0.2em] text-[#716a62] uppercase">
-              LOVED BY OUR COMMUNITY
+              محبوب من مجتمعنا
             </span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#191919] tracking-tight">
-            What Our Guests Are Saying
+            ماذا يقول ضيوفنا
           </h2>
 
           <p className="text-sm sm:text-base text-[#645e57] leading-relaxed">
-            From morning rituals to peaceful afternoon reads, here is why our neighborhood loves Panda Café.
+            من طقوس الصباح إلى قراءة العصر الهادئة، إليك لماذا يحب حينا كافيه باندا.
           </p>
 
           {/* Google Reviews Badge Summary */}
@@ -74,7 +74,7 @@ export default function TestimonialsSection() {
             </div>
             <span className="text-xs font-bold text-stone-900">4.9 / 5.0</span>
             <span className="text-xs text-stone-400">•</span>
-            <span className="text-xs text-stone-600 font-medium">Over 450+ verified reviews</span>
+            <span className="text-xs text-stone-600 font-medium">أكثر من +450 تقييم موثّق</span>
           </div>
         </div>
 

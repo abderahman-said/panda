@@ -3,8 +3,8 @@ import "./globals.css";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export const metadata: Metadata = {
-  title: "Panda Café | Good Coffee. Good Mood.",
-  description: "At Panda Café, we believe a great cup of coffee can make your day brighter. Fresh coffee, delicious food, and a cozy atmosphere — all in one place.",
+  title: "كافيه باندا | قهوة رائعة. مزاج رائع.",
+  description: "في كافيه باندا، نؤمن بأن فنجان قهوة رائع يجعل يومك أكثر إشراقًا. قهوة طازجة وطعام لذيذ وأجواء دافئة — كل ذلك في مكان واحد.",
 };
 
 export default function RootLayout({
@@ -13,12 +13,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
+    <html lang="ar" dir="rtl" className="scroll-smooth" data-scroll-behavior="smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Caveat:wght@600;700&display=swap"
           rel="stylesheet"
         />
       </head>

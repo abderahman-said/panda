@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { MessageCircle, X } from "lucide-react";
+import { X } from "lucide-react";
 
 export default function FloatingWhatsApp() {
   const [showTooltip, setShowTooltip] = useState(true);
 
-  const whatsappNumber = "+201012345678";
-  const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=Hello%20Panda%20Café!%20I%20would%20like%20to%20inquire%20about...`;
+  const whatsappNumber = "+201026994802";
+  const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=مرحباً%20كافيه%20باندا!%20أود%20الاستفسار%20عن...`;
 
   return (
     <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2 print:hidden select-none">
@@ -15,14 +15,14 @@ export default function FloatingWhatsApp() {
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-2 bg-[#141715] text-white text-xs font-medium px-3.5 py-2 rounded-2xl shadow-xl border border-stone-800 animate-in fade-in slide-in-from-bottom-2 duration-300">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span>Need help or directions? Chat with us!</span>
+          <span>هل تحتاج مساعدة؟ تحدث معنا!</span>
           <button
             onClick={(e) => {
               e.preventDefault();
               setShowTooltip(false);
             }}
             className="text-stone-400 hover:text-white ml-1 p-0.5 rounded cursor-pointer"
-            aria-label="Dismiss message"
+            aria-label="إغلاق الرسالة"
           >
             <X className="w-3 h-3" />
           </button>
@@ -34,7 +34,7 @@ export default function FloatingWhatsApp() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat with Panda Café on WhatsApp"
+        aria-label="تحدث مع كافيه باندا على واتسآب"
         className="group relative flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-lg hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
       >
         {/* Pulsing ring animation */}

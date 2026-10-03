@@ -39,7 +39,6 @@ export default function MenuPage() {
 
       <main className="pt-28 sm:pt-36 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
           {/* Breadcrumb & Navigation Back */}
           <div className="flex items-center gap-2 text-xs text-stone-500 mb-6">
             <Link
@@ -47,10 +46,10 @@ export default function MenuPage() {
               className="inline-flex items-center gap-1.5 hover:text-stone-900 transition-colors font-medium"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
-              <span>Back to Home</span>
+              <span>العودة للرئيسية</span>
             </Link>
             <span>/</span>
-            <span className="font-semibold text-stone-800">Menu</span>
+            <span className="font-semibold text-stone-800">قائمة الطعام</span>
           </div>
 
           {/* Header Banner */}
@@ -58,39 +57,38 @@ export default function MenuPage() {
             <div className="inline-flex items-center gap-2 bg-[#ebdcd0]/60 px-3.5 py-1 rounded-full">
               <Sparkles className="w-3.5 h-3.5 text-[#c4824a]" />
               <span className="text-[11px] font-bold tracking-[0.2em] text-[#716a62] uppercase">
-                HANDCRAFTED & FRESH DAILY
+                حرفي وطازج يوميًا
               </span>
             </div>
 
             <h1 className="text-3xl sm:text-5xl font-extrabold text-[#191919] tracking-tight leading-tight">
-              The Panda Café Menu
+              قائمة كافيه باندا
             </h1>
 
             <p className="text-sm sm:text-base text-[#615c56] leading-relaxed">
-              Explore our artisan coffee blends, cold brews, and oven-fresh pastries.
-              Every drink is crafted with precision and served in a warm, cozy ambiance.
+              استكشف مزيجات القهوة الحرفية، الكولد بريو، والمعجنات الطازجة من
+              الفرن. كل مشروب يُحضّر بدقة ويُقدّم في أجواء دافئة.
             </p>
           </div>
 
           {/* Search Bar & Category Filter Tabs */}
           <div className="space-y-6 mb-12">
-            
             {/* Live Search Input */}
             <div className="max-w-md mx-auto relative">
-              <Search className="w-4 h-4 text-stone-400 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <Search className="w-4 h-4 text-stone-400 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
               <input
                 type="text"
-                placeholder="Search coffee, tea, pastries..."
+                placeholder="ابحث عن قهوة، شاي، معجنات..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-11 pr-4 py-3 bg-[#fffcf8] border border-[#ebdcd0] rounded-full text-sm text-stone-800 placeholder-stone-400 shadow-xs focus:outline-hidden focus:border-[#c4824a] transition-all"
+                className="w-full pr-11 pl-12 py-3 bg-[#fffcf8] border border-[#ebdcd0] rounded-full text-sm text-stone-800 placeholder-stone-400 shadow-xs focus:outline-hidden focus:border-[#c4824a] transition-all"
               />
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery("")}
-                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-xs text-stone-400 hover:text-stone-700 bg-stone-100 hover:bg-stone-200 px-2 py-0.5 rounded-full cursor-pointer"
+                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-xs text-stone-400 hover:text-stone-700 bg-stone-100 hover:bg-stone-200 px-2 py-0.5 rounded-full cursor-pointer"
                 >
-                  Clear
+                  مسح
                 </button>
               )}
             </div>
@@ -128,7 +126,6 @@ export default function MenuPage() {
                 );
               })}
             </div>
-
           </div>
 
           {/* Menu Items Grid (Display Showcase Only - No Ordering) */}
@@ -137,9 +134,12 @@ export default function MenuPage() {
               <div className="w-12 h-12 rounded-full bg-amber-100 text-amber-800 mx-auto flex items-center justify-center">
                 <Coffee className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-stone-900">No items found</h3>
+              <h3 className="text-lg font-bold text-stone-900">
+                لا توجد نتائج
+              </h3>
               <p className="text-xs text-stone-500">
-                We couldn&apos;t find anything matching &quot;{searchQuery}&quot;. Try searching for &quot;latte&quot;, &quot;mocha&quot;, or &quot;croissant&quot;.
+                لم نجد شيئًا يطابق «{searchQuery}». حاول البحث عن «لاتيه»،
+                «موكا»، أو «كرواسون».
               </p>
               <button
                 onClick={() => {
@@ -148,15 +148,15 @@ export default function MenuPage() {
                 }}
                 className="mt-2 text-xs font-semibold text-[#c4824a] hover:underline cursor-pointer"
               >
-                Reset filters
+                إعادة ضبط الفلاتير
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-8">
               {filteredItems.map((item) => (
                 <div
                   key={item.id}
-                  className="group bg-[#fffcf8] border border-[#ebdcd0] hover:border-[#d8c5b3] rounded-3xl p-4 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:shadow-[#6d4c2b]/5 hover:-translate-y-1.5"
+                  className="group bg-[#fffcf8] border border-[#ebdcd0] hover:border-[#d8c5b3] rounded-3xl  p-2  md:p-4 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:shadow-[#6d4c2b]/5 hover:-translate-y-1.5"
                 >
                   <div>
                     {/* Item Image with tags */}
@@ -182,24 +182,24 @@ export default function MenuPage() {
                     </div>
 
                     {/* Item Name */}
-                    <h3 className="text-base sm:text-lg font-bold text-[#1a1a1a] mb-1">
+                    <h3 className="text-sm md:text-lg font-bold text-[#1a1a1a] mb-1">
                       {item.name}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-xs text-[#706a63] leading-relaxed mb-4">
+                    <p className="text-[9px] md:text-xs text-[#706a63] leading-relaxed   mb-2 md:mb-4">
                       {item.description}
                     </p>
                   </div>
 
                   {/* Bottom Row: Price & Highlight Badge (Purely Display Only) */}
-                  <div className="flex items-center justify-between pt-3 border-t border-[#ebdcd0]">
+                  <div className="flex items-center justify-between md:pt-3 pt-1.5 border-t border-[#ebdcd0]">
                     <div className="flex flex-col">
                       <span className="text-[10px] text-stone-400 font-medium uppercase tracking-wider">
-                        Price
+                        السعر
                       </span>
                       <span className="text-lg font-extrabold text-[#191919]">
-                        ${item.price.toFixed(2)}
+                        {item.price} ج.م
                       </span>
                     </div>
 
@@ -216,18 +216,21 @@ export default function MenuPage() {
           )}
 
           {/* Quality Standards Highlights Bar */}
-          <div className="mt-16 sm:mt-20 bg-[#fffcf8] border border-[#ebdcd0] rounded-3xl p-6 sm:p-10">
+          <div className="mt-12 sm:mt-20 bg-[#fffcf8] border border-[#ebdcd0] rounded-3xl p-6 sm:p-10">
             <h3 className="text-lg sm:text-xl font-bold text-center text-[#191919] mb-6">
-              Our Artisan Quality Promise
+              وعدنا بالجودة الحرفية
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
               <div className="flex flex-col items-center space-y-2">
                 <div className="w-10 h-10 rounded-full bg-[#f0e2d4] text-[#c4824a] flex items-center justify-center">
                   <CheckCircle className="w-5 h-5" />
                 </div>
-                <h4 className="text-sm font-bold text-stone-900">100% Arabica Beans</h4>
+                <h4 className="text-sm font-bold text-stone-900">
+                  100% حبوب أرابيكا
+                </h4>
                 <p className="text-xs text-stone-600 max-w-xs">
-                  Ethically sourced beans, roasted in small batches to preserve natural aromatics.
+                  حبوب مصدرها أخلاقي، محمصة بدفعات صغيرة للحفاظ على العطر
+                  الطبيعي.
                 </p>
               </div>
 
@@ -235,9 +238,11 @@ export default function MenuPage() {
                 <div className="w-10 h-10 rounded-full bg-[#f0e2d4] text-[#c4824a] flex items-center justify-center">
                   <CheckCircle className="w-5 h-5" />
                 </div>
-                <h4 className="text-sm font-bold text-stone-900">Daily Fresh Bakery</h4>
+                <h4 className="text-sm font-bold text-stone-900">
+                  مخبز يومي طازج
+                </h4>
                 <p className="text-xs text-stone-600 max-w-xs">
-                  Flaky French butter croissants and sweet brioches baked fresh every morning.
+                  كرواسون وبريوش فرنسي بالزبدة مخبوز طازجًا كل صباح.
                 </p>
               </div>
 
@@ -245,9 +250,11 @@ export default function MenuPage() {
                 <div className="w-10 h-10 rounded-full bg-[#f0e2d4] text-[#c4824a] flex items-center justify-center">
                   <CheckCircle className="w-5 h-5" />
                 </div>
-                <h4 className="text-sm font-bold text-stone-900">Plant-Based Options</h4>
+                <h4 className="text-sm font-bold text-stone-900">
+                  خيارات نباتية
+                </h4>
                 <p className="text-xs text-stone-600 max-w-xs">
-                  Customizable with oat milk, almond milk, or coconut milk upon your visit.
+                  قابلة للتخصيص بحليب الشوفان أو اللوز أو جوز الهند عند زيارتك.
                 </p>
               </div>
             </div>
@@ -256,30 +263,30 @@ export default function MenuPage() {
           {/* Bottom Call to Action: Visit & Contact */}
           <div className="mt-12 bg-[#121614] rounded-3xl p-8 sm:p-12 text-white text-center space-y-5 shadow-xl">
             <span className="text-xs font-bold tracking-[0.2em] text-[#c4824a] uppercase">
-              JOIN US IN PERSON
+              انضم إلينا شخصيًا
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold max-w-xl mx-auto">
-              Ready to Experience the Panda Vibe?
+              هل أنت مستعد لتجربة باندا؟
             </h2>
             <p className="text-stone-300 text-xs sm:text-sm max-w-md mx-auto">
-              Drop by anytime to enjoy the warmth and aroma of fresh coffee, or get in touch with us directly for any inquiries.
+              تفضّل بزيارتنا في أي وقت لتستمتع بدفء وعطر القهوة الطازجة، أو
+              تواصل معنا مباشرةً.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
               <Link
                 href="/contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-stone-100 text-[#141715] text-xs sm:text-sm font-bold px-7 py-3.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
               >
-                <span>Contact Us</span>
+                <span>تواصل معنا</span>
               </Link>
               <Link
                 href="/"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1c221e] hover:bg-[#252e28] text-white text-xs sm:text-sm font-semibold px-7 py-3.5 rounded-full border border-stone-700 transition-all duration-200 cursor-pointer"
               >
-                <span>Back to Home</span>
+                <span>العودة للرئيسية</span>
               </Link>
             </div>
           </div>
-
         </div>
       </main>
 

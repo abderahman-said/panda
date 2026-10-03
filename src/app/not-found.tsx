@@ -28,13 +28,13 @@ export default function NotFound() {
           <div className="space-y-2">
             <div className="inline-flex items-center gap-1.5 bg-[#ebdcd0]/60 px-3 py-1 rounded-full text-[11px] font-bold text-[#c4824a] uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>404 • PAGE NOT FOUND</span>
+              <span>404 • الصفحة غير موجودة</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-[#191919] tracking-tight">
-              Oops! This Cup is Empty
+              عذراً! هذا الفنجان فارغ
             </h1>
             <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-md mx-auto">
-              We couldn&apos;t find the page you were looking for. Perhaps it slipped away like steam from a hot cappuccino, or the address changed.
+              لم نتمكن من العثور على الصفحة التي تبحث عنها. ربما تبخرت كبخار الكابوتشينو الساخن، أو أن العنوان قد تغيّر.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export default function NotFound() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#141715] hover:bg-neutral-800 text-white text-xs sm:text-sm font-semibold px-6 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
             >
               <Home className="w-4 h-4" />
-              <span>Back to Home</span>
+              <span>العودة للرئيسية</span>
             </Link>
 
             <Link
@@ -53,7 +53,7 @@ export default function NotFound() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#fffcf8] hover:bg-[#f2e5d7] text-stone-800 border border-[#ebdcd0] text-xs sm:text-sm font-semibold px-6 py-3 rounded-full transition-all duration-200 cursor-pointer"
             >
               <Coffee className="w-4 h-4 text-[#c4824a]" />
-              <span>Explore Menu</span>
+              <span>استكشف القائمة</span>
             </Link>
           </div>
 

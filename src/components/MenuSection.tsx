@@ -20,27 +20,26 @@ interface MenuSectionProps {
 export default function MenuSection({ onViewAllMenu }: MenuSectionProps) {
   const swiperRef = useRef<SwiperType | null>(null);
 
-  // Showcase the first 6 items in the homepage swiper carousel
-  const featuredItems = fullMenuItems.slice(0, 6);
+  // Showcase popular signature items in the homepage swiper carousel
+  const featuredItems = fullMenuItems.filter((item) => item.isPopular).slice(0, 8);
 
   return (
     <section id="menu" className="py-12 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header row */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end mb-10">
-          
           <div className="lg:col-span-8 space-y-3">
             <div className="inline-flex items-center gap-2">
               <span className="text-xs font-bold tracking-[0.2em] text-[#c4824a] uppercase">
-                OUR HANDCRAFTED SELECTION
+                تشكيلتنا المختارة بعناية
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-extrabold text-[#191919] tracking-tight leading-tight">
-              Special Drinks & Fresh Bites
+              مشروبات مميزة ولقيمات طازجة
             </h2>
             <p className="text-[#645e57] text-sm sm:text-base max-w-2xl leading-relaxed">
-              From rich espressos to creamy signature drinks and golden pastries — each item is crafted with passion to elevate your mood.
+              من الإسبريسو الغني إلى مشروباتنا المميزة والمعجنات الذهبية — كل
+              صنف يُحضّر بشغف ليرفع مزاجك.
             </p>
           </div>
 
@@ -52,14 +51,14 @@ export default function MenuSection({ onViewAllMenu }: MenuSectionProps) {
                 aria-label="Previous menu item"
                 className="w-9 h-9 rounded-full border border-[#d8c5b3] hover:border-stone-900 bg-[#fffcf8] flex items-center justify-center text-stone-700 hover:text-stone-900 hover:bg-[#efe1d3] transition-all duration-200 cursor-pointer shadow-xs active:scale-95"
               >
-                <ArrowLeft className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4" />
               </button>
               <button
                 onClick={() => swiperRef.current?.slideNext()}
                 aria-label="Next menu item"
                 className="w-9 h-9 rounded-full border border-[#d8c5b3] hover:border-stone-900 bg-[#fffcf8] flex items-center justify-center text-stone-700 hover:text-stone-900 hover:bg-[#efe1d3] transition-all duration-200 cursor-pointer shadow-xs active:scale-95"
               >
-                <ArrowRight className="w-4 h-4" />
+                <ArrowLeft className="w-4 h-4" />
               </button>
             </div>
 
@@ -67,11 +66,10 @@ export default function MenuSection({ onViewAllMenu }: MenuSectionProps) {
               href="/menu"
               className="inline-flex items-center gap-2 bg-[#141715] hover:bg-neutral-800 text-white text-xs sm:text-sm font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
             >
-              <span>Explore Full Menu</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+              <span>استكشف القائمة كاملة</span>
+              <ArrowLeft className="w-3.5 h-3.5" />
             </Link>
           </div>
-
         </div>
 
         {/* Swiper Carousel with Custom Styled Pagination Dots */}
@@ -125,9 +123,11 @@ export default function MenuSection({ onViewAllMenu }: MenuSectionProps) {
                 {/* Bottom Row: Purely Display Price & Quality Badge (No Order/Cart) */}
                 <div className="flex items-center justify-between pt-3 border-t border-[#ebdcd0]">
                   <div className="flex flex-col">
-                    <span className="text-[10px] text-stone-400 font-medium">Price</span>
+                    <span className="text-[10px] text-stone-400 font-medium">
+                      السعر
+                    </span>
                     <span className="text-base font-extrabold text-[#191919]">
-                      ${item.price.toFixed(2)}
+                      {item.price} ج.م
                     </span>
                   </div>
 
@@ -142,7 +142,6 @@ export default function MenuSection({ onViewAllMenu }: MenuSectionProps) {
             </SwiperSlide>
           ))}
         </Swiper>
-
       </div>
     </section>
   );

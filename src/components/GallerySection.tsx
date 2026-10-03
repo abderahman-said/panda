@@ -26,62 +26,61 @@ export default function GallerySection() {
   const galleryItems: GalleryItem[] = [
     {
       id: "1",
-      title: "Artisan Panda Latte Art",
+      title: "فن لاتيه باندا الحرفي",
       image: "/images/panda-latte-art.jpg",
-      alt: "Cappuccino cup with cute panda face latte art",
+      alt: "كوب كابوتشينو بوجه باندا لطيف في فن اللاتيه",
     },
     {
       id: "2",
-      title: "Cozy Café Atmosphere",
+      title: "أجواء الكافيه الدافئة",
       image: "/images/cafe-interior.jpg",
-      alt: "Panda Café warm brick interior and glowing neon sign",
+      alt: "داخلية كافيه باندا الدافئة بجدرانها الطوبية ولافتة النيون",
     },
     {
       id: "3",
-      title: "Signature Cold Brew",
+      title: "كولد بريو مميز",
       image: "/images/cold-brew.jpg",
-      alt: "Iced dark cold brew coffee in glass with ice cubes",
+      alt: "قهوة كولد بريو داكنة مثلجة في كوب زجاجي",
     },
     {
       id: "4",
-      title: "Morning Coffee & Croissant",
+      title: "قهوة وكرواسون صباحي",
       image: "/images/coffee-pastry.jpg",
-      alt: "Hot latte and flaky golden croissant on wooden table",
+      alt: "لاتيه ساخنة وكرواسون ذهبي هش على طاولة خشبية",
     },
     {
       id: "5",
-      title: "Our Fluffy Mascot",
+      title: "ماسكوتنا الفرو اللطيف",
       image: "/images/baby-panda.jpg",
-      alt: "Adorable baby panda bear drinking coffee",
+      alt: "دب باندا صغير لطيف يشرب القهوة",
     },
   ];
 
   return (
     <section id="gallery" className="py-12 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header Row */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
           <div className="space-y-2">
             <span className="text-xs font-bold tracking-[0.2em] text-[#c4824a] uppercase">
-              GALLERY
+              معرض الصور
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-extrabold text-[#191919] tracking-tight">
-              A Glimpse of Our World
+              لمحة من عالمنا
             </h2>
           </div>
 
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             <p className="text-xs sm:text-sm text-[#706a63] hidden md:block">
-              Take a look at some moments <br className="hidden lg:inline" />
-              from our cozy café.
+              الق نظرة على بعض لحظات <br className="hidden lg:inline" />
+              من كافيهنا الدافئ.
             </p>
 
             <Link
               href="/gallery"
               className="inline-flex items-center gap-1.5 bg-[#141715] hover:bg-neutral-800 text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 rounded-full transition-all duration-200 shadow-xs hover:shadow-md cursor-pointer"
             >
-              <span>Full Gallery</span>
+              <span>المعرض كاملاً</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
 
@@ -92,14 +91,14 @@ export default function GallerySection() {
                 aria-label="Previous slide"
                 className="w-9 h-9 rounded-full border border-[#d8c5b3] hover:border-stone-900 bg-[#fffcf8] flex items-center justify-center text-stone-700 hover:text-stone-900 hover:bg-[#efe1d3] transition-all duration-200 cursor-pointer shadow-xs active:scale-95"
               >
-                <ArrowLeft className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4" />
               </button>
               <button
                 onClick={() => swiperRef.current?.slideNext()}
                 aria-label="Next slide"
                 className="w-9 h-9 rounded-full border border-[#d8c5b3] hover:border-stone-900 bg-[#fffcf8] flex items-center justify-center text-stone-700 hover:text-stone-900 hover:bg-[#efe1d3] transition-all duration-200 cursor-pointer shadow-xs active:scale-95"
               >
-                <ArrowRight className="w-4 h-4" />
+                <ArrowLeft className="w-4 h-4" />
               </button>
             </div>
           </div>
@@ -160,7 +159,6 @@ export default function GallerySection() {
             ))}
           </Swiper>
         </div>
-
       </div>
 
       {/* Lightbox Modal */}
@@ -189,8 +187,10 @@ export default function GallerySection() {
               />
             </div>
             <div className="p-4 bg-stone-950 flex items-center justify-between text-white">
-              <span className="font-semibold text-sm sm:text-base">{selectedImage.title}</span>
-              <span className="text-xs text-stone-400">Panda Café Moments</span>
+              <span className="font-semibold text-sm sm:text-base">
+                {selectedImage.title}
+              </span>
+              <span className="text-xs text-stone-400">لحظات كافيه باندا</span>
             </div>
           </div>
         </div>

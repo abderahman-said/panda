@@ -20,11 +20,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Menu", href: "/menu" },
-    { name: "About", href: "/about" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "/contact" },
+    { name: "الرئيسية", href: "/" },
+    { name: "المنيو", href: "/menu" },
+    { name: "من نحن", href: "/about" },
+    { name: "معرض الصور", href: "/gallery" },
+    { name: "تواصل معنا", href: "/contact" },
   ];
 
   const isLinkActive = (href: string) => {
@@ -77,16 +77,20 @@ export default function Navbar() {
               className="flex items-center gap-1.5 sm:gap-2 bg-[#141715] hover:bg-neutral-800 text-white text-[11px] sm:text-xs font-semibold px-4 py-2 sm:px-5 sm:py-2.5 rounded-full transition-all duration-200 shadow-xs hover:shadow-md cursor-pointer whitespace-nowrap"
             >
               <Phone className="w-3.5 h-3.5 text-amber-400" />
-              <span>Contact Us</span>
+              <span>تواصل معنا</span>
             </Link>
 
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden p-2 text-stone-700 hover:text-black rounded-lg focus:outline-hidden cursor-pointer"
-              aria-label="Toggle navigation menu"
+              aria-label="فتح قائمة التنقل"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
+              {mobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <MenuIcon className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -102,7 +106,9 @@ export default function Navbar() {
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={`text-base font-medium py-1 border-b border-[#ebdcd0]/60 ${
-                  isLinkActive(link.href) ? "text-[#c4824a] font-bold" : "text-stone-700"
+                  isLinkActive(link.href)
+                    ? "text-[#c4824a] font-bold"
+                    : "text-stone-700"
                 }`}
               >
                 {link.name}
@@ -115,7 +121,7 @@ export default function Navbar() {
                 className="w-full flex items-center justify-center gap-2 bg-[#141715] text-white text-sm font-semibold py-3 rounded-full shadow-md"
               >
                 <Phone className="w-4 h-4 text-amber-400" />
-                <span>Contact Us</span>
+                <span>تواصل معنا</span>
               </Link>
             </div>
           </div>

@@ -3,13 +3,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 export default function AboutSection() {
   const stats = [
-    { value: "5+", label: "Years of Experience" },
-    { value: "10K+", label: "Happy Customers" },
-    { value: "100%", label: "Fresh Ingredients" },
+    { value: "+5", label: "سنوات من الخبرة" },
+    { value: "+10K", label: "عميل سعيد" },
+    { value: "100%", label: "مكونات طازجة" },
   ];
 
   return (
@@ -26,7 +26,7 @@ export default function AboutSection() {
               <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-lg">
                 <Image
                   src="/images/cafe-interior.jpg"
-                  alt="Cozy interior of Panda Café with warm brick and glowing sign"
+                  alt="الداخلية الدافئة لكافيه باندا بجدرانها الطوبية وتوهجها المضيء"
                   fill
                   className="object-cover object-center transition-transform duration-700 hover:scale-105"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -40,17 +40,16 @@ export default function AboutSection() {
               
               <div className="space-y-2.5 sm:space-y-3">
                 <span className="text-[11px] sm:text-xs font-bold tracking-[0.2em] text-[#c4824a] uppercase">
-                  ABOUT PANDA
+                  عن كافيه باندا
                 </span>
 
                 <h2 className="text-2xl sm:text-4xl lg:text-[2.6rem] font-extrabold text-white tracking-tight leading-[1.15]">
-                  More Than Just <br />
-                  A Café, It&apos;s a{" "}
-                  <span className="text-[#c4824a]">Vibe.</span>
+                  أكثر من مجرد <br />
+                  كافيه، إنها <span className="text-[#c4824a]">روح.</span>
                 </h2>
 
                 <p className="text-stone-300 text-xs sm:text-base leading-relaxed max-w-xl pt-1 sm:pt-2">
-                  Panda Café was born from a simple idea: to create a place where great coffee, good food, and positive energy come together. Our mission is to bring people closer — one cup at a time.
+                  وُلد كافيه باندا من فكرة بسيطة: خلق مكان تتلاقى فيه القهوة الرائعة والطعام الطيب والطاقة الإيجابية. مهمتنا هي جمع الناس — فنجانًا فنجانًا.
                 </p>
               </div>
 
@@ -74,8 +73,8 @@ export default function AboutSection() {
                   href="/about"
                   className="inline-flex items-center gap-2 bg-[#c4824a] hover:bg-[#b0672e] text-white text-xs sm:text-sm font-bold px-5 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
                 >
-                  <span>Our Full Story</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <span>قصتنا كاملة</span>
+                  <ArrowLeft className="w-3.5 h-3.5" />
                 </Link>
               </div>
 
@@ -87,7 +86,7 @@ export default function AboutSection() {
           <div className="absolute -bottom-2 right-0 sm:right-4 pointer-events-none z-0 select-none w-44 sm:w-64 lg:w-80 aspect-[1200/896] overflow-hidden opacity-25 sm:opacity-85 lg:opacity-100">
             <Image
               src="/images/about-panda-peeking.jpg"
-              alt="Cute baby panda peeking at Panda Café"
+              alt="باندا لطيف يطل من كافيه باندا"
               fill
               className="object-cover object-bottom"
               sizes="(max-width: 640px) 176px, (max-width: 1024px) 256px, 320px"

@@ -7,23 +7,23 @@ export default function FeaturesBar() {
   const features = [
     {
       icon: Coffee,
-      title: "Premium Coffee",
-      description: "High quality beans, perfectly brewed.",
+      title: "قهوة فاخرة",
+      description: "حبوب عالية الجودة، محضورة بإتقان تام.",
     },
     {
       icon: Leaf,
-      title: "Fresh Ingredients",
-      description: "Natural, healthy, delicious.",
+      title: "مكونات طازجة",
+      description: "طبيعية، صحية، لذيذة.",
     },
     {
       icon: MapPin,
-      title: "Cozy Atmosphere",
-      description: "A perfect place to relax.",
+      title: "أجواء دافئة",
+      description: "مكان مثالي للاسترخاء.",
     },
     {
       icon: Heart,
-      title: "Friendly Service",
-      description: "Because you matter.",
+      title: "خدمة ودية",
+      description: "لأنك تستحق الأفضل.",
     },
   ];
 

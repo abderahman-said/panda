@@ -8,15 +8,18 @@ import { Heart } from "lucide-react";
 
 export default function Footer() {
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Menu", href: "/menu" },
-    { name: "About", href: "/about" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "/contact" },
+    { name: "الرئيسية", href: "/" },
+    { name: "المنيو", href: "/menu" },
+    { name: "من نحن", href: "/about" },
+    { name: "معرض الصور", href: "/gallery" },
+    { name: "تواصل معنا", href: "/contact" },
   ];
 
   return (
-    <footer id="contact" className="relative bg-[#0e1210] text-stone-400 pt-16 pb-12 border-t border-stone-800/60 overflow-hidden">
+    <footer
+      id="contact"
+      className="relative bg-[#0e1210] text-stone-400 pt-16 pb-12 border-t border-stone-800/60 overflow-hidden"
+    >
       {/* Left Decorative Botanical Leaves (AI Generated Image) */}
       <div className="absolute -left-10 sm:-left-4 lg:left-0 top-1/2 -translate-y-1/2 w-28 sm:w-44 lg:w-60 aspect-square pointer-events-none select-none z-0 opacity-35 sm:opacity-75 lg:opacity-90">
         <Image
@@ -40,10 +43,8 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
         {/* Main Row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-stone-800/80">
-          
           {/* Logo on Left */}
           <div>
             <PandaLogo light />
@@ -72,7 +73,10 @@ export default function Footer() {
               aria-label="Instagram"
               className="w-8 h-8 rounded-full border border-stone-800 hover:border-amber-500/50 flex items-center justify-center hover:text-white hover:bg-stone-800/50 transition-all duration-200"
             >
-              <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+              <svg
+                className="w-4 h-4 fill-none stroke-current stroke-2"
+                viewBox="0 0 24 24"
+              >
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
@@ -87,7 +91,10 @@ export default function Footer() {
               aria-label="Facebook"
               className="w-8 h-8 rounded-full border border-stone-800 hover:border-amber-500/50 flex items-center justify-center hover:text-white hover:bg-stone-800/50 transition-all duration-200"
             >
-              <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+              <svg
+                className="w-4 h-4 fill-none stroke-current stroke-2"
+                viewBox="0 0 24 24"
+              >
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
@@ -118,18 +125,16 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-
         </div>
 
         {/* Bottom Sub-row */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-4">
-          <p>© 2025 Panda Café. All rights reserved.</p>
+          <p>© 2025 كافيه باندا. جميع الحقوق محفوظة.</p>
           <p className="flex items-center gap-1.5 font-medium text-stone-300">
-            <span>Good Coffee. Good Mood.</span>
+            <span>قهوة رائعة. مزاج رائع.</span>
             <Heart className="w-3.5 h-3.5 text-stone-400 stroke-[1.8]" />
           </p>
         </div>
-
       </div>
     </footer>
   );

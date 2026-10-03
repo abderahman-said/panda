@@ -48,13 +48,13 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
             <div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold mb-2">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>The Panda Experience</span>
+                <span>تجربة باندا</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-white">
-                Brewing Happiness, One Cup at a Time
+                صنع السعادة، فنجانًا فنجانًا
               </h3>
               <p className="text-xs sm:text-sm text-stone-300 mt-1 max-w-md">
-                Experience the aroma, the calm atmosphere, and the craft behind our artisan coffee beans.
+                عش العطر والأجواء الهادئة وحرفية تحضير قهوتنا المختارة.
               </p>
             </div>
           </div>
@@ -63,9 +63,9 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
         <div className="p-4 bg-[#0e1210] flex items-center justify-between text-xs text-stone-400">
           <span className="flex items-center gap-1.5">
             <Volume2 className="w-4 h-4 text-amber-400" />
-            Cozy Jazz & Rain Ambience
+            جاز هادئ وأمطار هادئة
           </span>
-          <span className="text-stone-500">Panda Café Stories • 2:15</span>
+          <span className="text-stone-500">حكايات كافيه باندا • 2:15</span>
         </div>
       </div>
     </div>

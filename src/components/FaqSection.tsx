@@ -10,34 +10,34 @@ interface FaqItem {
 
 const faqs: FaqItem[] = [
   {
-    question: "Is Panda Café suitable for remote work and studying?",
+    question: "هل كافيه باندا مناسب للعمل عن بعد والدراسة؟",
     answer:
-      "Yes, absolutely! We provide complimentary high-speed fiber Wi-Fi, accessible power outlets at many seating booths, and comfortable seating with gentle ambient acoustics designed for focus and productivity.",
+      "نعم، بالتأكيد! نوفر واي فاي 5ج فائق السرعة، منافذ كهرباء في معظم المقاعد، وجلسات مريحة مصممة للتركيز والإنتاجية.",
   },
   {
-    question: "Do you have dedicated customer parking?",
+    question: "هل يوجد موقف خاص للعملاء؟",
     answer:
-      "Yes. We have dedicated parking spots directly facing the café entrance, as well as complimentary valet assistance during busy weekend evening hours.",
+      "نعم. لدينا أماكن موقف مخصصة أمام مدخل الكافيه مباشرةً، وبخدمة فالي مجانية خلال ساعات الذروة مساء نهاية الأسبوع.",
   },
   {
-    question: "Do you offer plant-based or dairy-free milk alternatives?",
+    question: "هل توفرون بدائل نباتية أو خالية من اللبن؟",
     answer:
-      "Yes! All of our hot and iced beverages can be customized with premium barista oat milk, almond milk, or coconut milk upon request.",
+      "نعم! جميع مشروباتنا الساخنة والباردة يمكن تخصيصها بحليب الشوفان النباتي أو حليب اللوز أو حليب جوز الهند عند الطلب.",
   },
   {
-    question: "Are pets allowed at Panda Café?",
+    question: "هل يسمح بدخول الحيوانات الأليفة؟",
     answer:
-      "Well-behaved pets on a leash are very welcome in our shaded botanical outdoor terrace. We even have fresh water bowls ready for your furry companions!",
+      "ترحب بالحيوانات المؤدبة بمقودة في منطقتنا الخارجية النباتية المظللة. لدينا حتى أطباق مياه جاهزة لرفاقك الفروي!",
   },
   {
-    question: "What are your daily opening hours?",
+    question: "ما هي ساعات العمل اليومية؟",
     answer:
-      "We are open daily: Sunday through Wednesday from 8:00 AM to 12:00 AM, and Thursday through Friday from 8:00 AM to 1:30 AM. Fresh butter croissants and pastries are served straight from the oven starting at 8:00 AM.",
+      "مفتوحون يوميًا: من الأحد حتى الأربعاء من 8 صباحًا حتى 12 منتصف الليل، ومن الخميس حتى الجمعة من 8 صباحًا حتى 1:30 فجرًا. كرواسون الزبدة متوفر من الفرن ابتداءً من 8 صباحًا.",
   },
   {
-    question: "How can I inquire about group visits or questions?",
+    question: "كيف يمكنني التواصل معكم؟",
     answer:
-      "You can chat with our team instantly on WhatsApp using our direct chat button, or call our front desk directly during working hours.",
+      "يمكنك محادثة فريقنا فوريًا عبر واتسآب باستخدام زر الدردشة المباشر، أو الاتصال بمكتبنا مباشرةً خلال ساعات العمل.",
   },
 ];
 
@@ -51,22 +51,21 @@ export default function FaqSection() {
   return (
     <section className="py-12 sm:py-20 bg-[#f8eee4]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14 space-y-3">
           <div className="inline-flex items-center gap-2 bg-[#ebdcd0]/70 px-3.5 py-1 rounded-full">
             <HelpCircle className="w-3.5 h-3.5 text-[#c4824a]" />
             <span className="text-[11px] font-bold tracking-[0.2em] text-[#716a62] uppercase">
-              GOT QUESTIONS?
+              هل لديك أسئلة؟
             </span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#191919] tracking-tight">
-            Frequently Asked Questions
+            الأسئلة الشائعة
           </h2>
 
           <p className="text-sm sm:text-base text-[#645e57] leading-relaxed">
-            Everything you need to know before visiting our cozy coffee house.
+            كل ما تحتاج معرفته قبل زيارتنا الدافئة.
           </p>
         </div>
 
@@ -81,7 +80,7 @@ export default function FaqSection() {
               >
                 <button
                   onClick={() => toggle(idx)}
-                  className="w-full flex items-center justify-between text-left px-5 sm:px-6 py-4.5 cursor-pointer focus:outline-hidden"
+                  className="w-full flex items-center justify-between  px-5 sm:px-6 py-4.5 cursor-pointer focus:outline-hidden"
                   aria-expanded={isOpen}
                 >
                   <span className="text-sm sm:text-base font-bold text-stone-900 pr-4">
@@ -107,7 +106,6 @@ export default function FaqSection() {
             );
           })}
         </div>
-
       </div>
     </section>
   );

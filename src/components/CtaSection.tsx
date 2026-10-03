@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone, ArrowLeft } from "lucide-react";
 
 export default function CtaSection() {
   return (
@@ -33,13 +33,13 @@ export default function CtaSection() {
             {/* Text details */}
             <div className="space-y-2 max-w-xl">
               <span className="text-xs font-bold tracking-[0.2em] text-[#c4824a] uppercase">
-                READY FOR A GOOD TIME?
+                هل أنت مستعد؟
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                Visit Panda Café Today
+                زر كافيه باندا اليوم
               </h2>
               <p className="text-stone-300 text-sm sm:text-base">
-                Great coffee, tasty food, and a cozy place waiting for you.
+                قهوة رائعة وطعام شهي ومكان دافئ ينتظرك.
               </p>
             </div>
 
@@ -50,15 +50,15 @@ export default function CtaSection() {
                 className="inline-flex items-center justify-center gap-2 bg-white hover:bg-stone-100 text-[#141715] text-xs sm:text-sm font-bold px-6 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
               >
                 <Phone className="w-4 h-4 text-[#141715]" />
-                <span>Contact Us</span>
+                <span>تواصل معنا</span>
               </Link>
 
               <Link
                 href="/menu"
                 className="inline-flex items-center justify-center gap-2 bg-[#1c221e] hover:bg-[#252e28] text-white text-xs sm:text-sm font-semibold px-6 py-3 rounded-full border border-stone-700/80 transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer"
               >
-                <span>Explore Full Menu</span>
-                <ArrowRight className="w-4 h-4 text-amber-400" />
+                <span>استكشف القائمة كاملة</span>
+                <ArrowLeft className="w-4 h-4 text-amber-400" />
               </Link>
             </div>
 
